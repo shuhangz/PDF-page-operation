@@ -30,10 +30,10 @@ def first_last_page(file_dir, filename):
             print(filename_pdf)
             page_count = pdf_input.getNumPages()
             pdf_output.addPage(pdf_input.getPage(0))
-            pdf_output.addPage(pdf_input.getPage(page_count-1))
+            # pdf_output.addPage(pdf_input.getPage(page_count-1))
     pdf_output.write(open(filename, 'wb'))
 
 if __name__ == '__main__':
-    file_dir = "C:\\Users\\zsh\\Desktop\\报奖论文\\论文_归类\\4_核心"
+    file_dir = r"C:\Users\zsh\Desktop\报奖论文\7_论文\3_国际会议"
     first_last_page(file_dir,'output.pdf')
 
